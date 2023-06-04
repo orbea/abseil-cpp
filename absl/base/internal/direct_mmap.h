@@ -26,6 +26,9 @@
 
 #ifdef __linux__
 
+#ifndef _LARGEFILE64_SOURCE
+#define _LARGEFILE64_SOURCE
+#endif
 #include <sys/types.h>
 #ifdef __BIONIC__
 #include <sys/syscall.h>
